@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Aqua&display=swap'); /* Import Aqua font */
+
+/* General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+body {
     width: 100%;
     height: 100%;
     background-color: rgb(184, 143, 181);
@@ -14,26 +17,26 @@ body{
     gap: 30px;
     flex-direction: column;
 }
-#logo{
+#logo {
     width: 20vw;
 }
-h1{
+h1 {
     color: aliceblue;
     font-family: "Protest Guerrilla", sans-serif;
 }
-#name{
+#name {
     color: rgb(51, 136, 155);
     font-size: 45px;
 }
-#va{
+#va {
     color: rgb(102, 43, 180);
     font-size: 45px; 
 }
-#voice{
+#voice {
     width: 100px;
     display: none;
 }
-#btn{
+#btn {
     width: 30%;
     background: linear-gradient(to right, rgb(21, 145, 207), rgb(223, 125, 171));
     padding: 10px;
@@ -49,42 +52,58 @@ h1{
     transition: all 0.5s;
     cursor: pointer;
 }
-#btn:hover{
+#btn:hover {
     box-shadow: 2px 2px 20px rgb(21, 145, 207), 2px 2px 20px rgb(201, 41, 116);
     letter-spacing: 2px;
 }
 
 /* Media Query for mobile devices */
 @media (max-width: 768px) {
+    body {
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Center-align content */
+    }
     #logo {
         width: 40vw;
     }
     h1 {
         font-size: 30px;
+        font-family: "Aqua", sans-serif; /* Use Aqua font */
     }
     #name, #va {
         font-size: 30px;
+        font-family: "Aqua", sans-serif; /* Use Aqua font */
     }
     #btn {
         width: 50%;
         font-size: 16px;
+        text-align: center;
     }
 }
 
 /* Media Query for small devices like iPhone SE */
 @media (max-width: 375px) {
+    body {
+        align-items: center;
+        justify-content: center;
+        text-align: center; /* Center-align content */
+    }
     #logo {
         width: 50vw;
     }
     h1 {
         font-size: 25px;
+        font-family: "Aqua", sans-serif; /* Use Aqua font */
     }
     #name, #va {
         font-size: 25px;
+        font-family: "Aqua", sans-serif; /* Use Aqua font */
     }
     #btn {
         width: 70%;
         font-size: 14px;
         padding: 8px;
+        text-align: center;
     }
 }
